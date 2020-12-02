@@ -64,19 +64,16 @@ class Charities {
   render(){
         for (let i =0; i < this.charities.length; i++){
         console.log ('my charities are',this.charities[i])  
+        let placecard = document.querySelector('.placecard')
+          placecard.innerHTML += `
+          <li>
+            <h3>${this.charities[i].name}</h3>
+            <img src=${this.charities[i].image}/>
+          </li>
+          `
       }
-  let placecard = document.querySelector('.placecard')
-    placecard.innerHTML += `
-    <li>${this.charities[0].name},${this.charities[0].image}</li>
-    <li>${this.charities[1].name},${this.charities[1].image}</li>
-    <li>${this.charities[2].name},${this.charities[2].image}</li>
-    <li>${this.charities[3].name},${this.charities[3].image}</li>
-    <li>${this.charities[4].name},${this.charities[4].image}</li>
-    <li>${this.charities[5].name},${this.charities[5].image}</li>
-    <li>${this.charities[6].name},${this.charities[6].image}</li>
-    <li>${this.charities[7].name},${this.charities[7].image}</li>
-    `
-    "my charity list goes here"
+
+    
   }
 
 }

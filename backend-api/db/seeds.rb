@@ -58,7 +58,7 @@ charities = [
 ]
 
 charities.each do |charity|
-Charity.create(name: charity[:name], image: charity[:image])
+Api::V1::Charity.create(name: charity[:name], image: charity[:image])
 
 
 end
