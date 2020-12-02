@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  donor_name: MyString
+  donor_email: MyString
+  donor_amount: MyString
+  refernce: 
+
+two:
+  donor_name: MyString
+  donor_email: MyString
+  donor_amount: MyString
+  refernce: 
