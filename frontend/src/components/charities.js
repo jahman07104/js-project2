@@ -1,44 +1,13 @@
-// // My Variables
-// const form = document.querySelector('#charity-form')
-// const charitylist = document.querySelector('.collection')
-  // const choseCharity = document.querySelector('.choose-charities')
-// const clearBtn = document.querySelector('.clear_charities')
-// const filter = document.querySelector('#filter')
-// const charityInput =  document.querySelector('#charity')
-
-const chooseCharity = document.querySelector('.choose-charities').addEventListener('click', function(){
-  console.log('clipped')
-  
-})
-const link = document.querySelector('a').addEventListener('click', onClick)
-function onClick(e){
-  console.log('pretty')
-}
-//  console.log(link.getAttribute('href'))
-const form = document.querySelector('.charity-form').addEventListener('submit', e =>
-{
-  e.preventDefault();
-const charity =document.querySelector('#charity')
-  console.log(charity.value)
+ // Search Input
+const searchCharity = document.getElementById('searchCharity');
+// Search input
+searchCharity.addEventListener('keyup',(e) => {
+  // to get input text from donor
+  const donorText = e.target.value;
+    if (donorText !== ''){
+    console.log(donorText)
+  }
 });
-const para = document.querySelector('p').addEventListener('click', onClick)
-function onClick(e){
-  console.log('what up')
-}
-const like = document.querySelector('.like-btn').addEventListener('mouseover', onClick)
-function onClick(e){
-  e.preventDefault();
-  // Event target element
-  val = e.target;
-  val = e.target.id;
-  val = e.target.className;
-  val = e.target.classList;
-  val = e.target.innertext = "hey Patty";
-  val = e.type
-
-console.log(val)
-}
-
 class Charities {
   constructor(id, name, image){
     this.charities = []
@@ -58,22 +27,55 @@ class Charities {
         .then(() => {
           this.render()       
         });
-        
-    }
-
-  render(){
-        for (let i =0; i < this.charities.length; i++){
-        console.log ('my charities are',this.charities[i])  
-        let placecard = document.querySelector('.placecard')
-          placecard.innerHTML += `
-          <li>
-            <h3>${this.charities[i].name}</h3>
-            <img src=${this.charities[i].image}/>
-          </li>
-          `
-      }
-
-    
   }
 
-}
+  render() {
+    for (let i =0; i < this.charities.length; i++){
+    console.log ('my charities are',this.charities[i])  
+    let placecard = document.querySelector('.placecard')
+      placecard.innerHTML += `
+        <li>
+          <h3>${this.charities[i].name}</h3>
+          <img src=${this.charities[i].image}/>
+        </li>
+        `
+      }
+    }
+  }
+
+
+
+//  variables for popup
+const button = document.querySelector('.button');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close'); 
+const form = document.getElementById('form')
+
+
+// Donor pop up maybe for third fetch to update.??
+button.addEventListener('click', () => {
+  popup.style.display = 'block';
+
+});
+
+close.addEventListener('click', () => {
+  popup.style.display = 'none';
+
+});
+
+popup.addEventListener('click', () => {
+  popup.style.display = 'none';
+
+});
+
+// Donor form
+form.addEventListener('submit', function(e){
+  // prevent auto submission
+  e.preventDefault()
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const pwd =document.getElementById('pwd').value
+})
+
+// make Donor Post request
+

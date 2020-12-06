@@ -1,0 +1,79 @@
+body {
+  background-color: lightblue;
+}
+
+.nav {
+  color: green;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.charity-header{
+  text-align: center;
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+  background: crimson;
+  color: white;
+  border: 0;
+  padding: 6px 10px;
+}
+
+.popup-wrapper{
+  background: rgba(0,0,0,0.3);
+  position:fixed;
+  top:0;
+  left:0;
+  width: 150%;
+  height: 150%;
+  display: none;
+}
+
+.popup{
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin:10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+}
+
+.popup a{
+  background:crimson;
+  color: white;
+  text-decoration: none;
+  padding:10px 12px
+}
+
+.popup-close{
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}

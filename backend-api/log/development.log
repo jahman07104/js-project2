@@ -34714,3 +34714,1050 @@ Processing by CharitiesController#index as */*
 Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.4ms | Allocations: 1520)
 
 
+Started GET "/charities" for ::1 at 2020-12-03 11:59:49 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 46ms (Views: 25.7ms | ActiveRecord: 4.1ms | Allocations: 6454)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 11:59:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.3ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 12:08:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: 51.2ms | ActiveRecord: 0.5ms | Allocations: 5523)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 12:11:25 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:11:10 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 62ms (Views: 47.2ms | ActiveRecord: 0.4ms | Allocations: 5523)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:17:00 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.9ms | Allocations: 1538)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:19:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 2.2ms | Allocations: 5847)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:19:41 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:22:40 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 20.4ms | ActiveRecord: 2.4ms | Allocations: 6456)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:22:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 32.8ms | ActiveRecord: 0.5ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:25:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 91ms (Views: 82.1ms | ActiveRecord: 3.5ms | Allocations: 5861)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:30:03 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:30:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 64ms (Views: 55.4ms | ActiveRecord: 3.4ms | Allocations: 5839)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:31:54 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 13:49:49 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.7ms | Allocations: 1538)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:32:32 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 49ms (Views: 42.6ms | ActiveRecord: 0.5ms | Allocations: 5495)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:33:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:36:02 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:38:38 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:40:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:41:20 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:41:50 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.8ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:42:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:44:35 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 63ms (Views: 58.0ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:45:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:46:00 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:51:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:51:20 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:52:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:53:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:56:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 14:57:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:11:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 3.4ms | Allocations: 1539)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:26:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 147ms (Views: 137.5ms | ActiveRecord: 0.4ms | Allocations: 5511)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:27:34 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:31:35 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:31:40 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:33:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:34:51 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.7ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:35:58 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:36:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 2.3ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:37:27 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:38:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (7.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 21.5ms | ActiveRecord: 7.3ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:38:26 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:41:43 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 1.3ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:42:02 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:42:16 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:42:39 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:42:54 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:43:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:43:27 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:43:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.3ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:44:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:47:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:53:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:55:03 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 162ms (Views: 160.2ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 15:55:31 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 16:24:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 97ms (Views: 82.5ms | ActiveRecord: 0.8ms | Allocations: 5511)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 16:24:48 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 16:43:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.7ms | Allocations: 1538)
+
+
+Started GET "/charities" for ::1 at 2020-12-03 16:45:10 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for 127.0.0.1 at 2020-12-04 18:29:09 -0500
+  [1m[35m (10.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 102ms (Views: 79.8ms | ActiveRecord: 3.7ms | Allocations: 6458)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 18:34:16 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.4ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 18:34:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.6ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 19:19:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 5540)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 19:20:39 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.5ms | Allocations: 1535)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:04:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.5ms | Allocations: 1538)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:05:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.2ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:06:26 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:08:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 2.9ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:09:21 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:09:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (6.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 6.7ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:11:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (9.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 82ms (Views: 71.6ms | ActiveRecord: 9.7ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:12:32 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:14:31 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:16:00 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.7ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:16:18 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 1.1ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:18:15 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 56ms (Views: 39.6ms | ActiveRecord: 4.5ms | Allocations: 5847)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:19:33 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.6ms | Allocations: 1521)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:19:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:20:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 20:23:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (44.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCharities (20201127214645)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "charities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201127214645"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDonations (20201201013841)
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "donations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "donor_name" varchar, "donor_email" varchar, "donor_amount" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201201013841"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-05 01:42:59.389518"], ["updated_at", "2020-12-05 01:42:59.389518"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (2.0ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "The Bill and Belinda Gates Foundation"], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/BillMelindaGatesFoundation.png/600px-BillMelindaGatesFoundation.png"], ["created_at", "2020-12-05 01:43:27.183284"], ["updated_at", "2020-12-05 01:43:27.183284"]]
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (1.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "The Donor Group"], ["image", "https://th.bing.com/th/id/OIP.CpnQyrRb6e3XdpFVHkoN4wHaHa?w=190&h=190&c=7&o=5&dpr=1.25&pid=1.7"], ["created_at", "2020-12-05 01:43:27.203486"], ["updated_at", "2020-12-05 01:43:27.203486"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (2.8ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hearts and Hands around the world"], ["image", "https://th.bing.com/th/id/OIP.dZFVBoDVeX-i1pQiRjj13AHaGo?w=204&h=184&c=7&o=5&dpr=1.25&pid=1.7"], ["created_at", "2020-12-05 01:43:27.219433"], ["updated_at", "2020-12-05 01:43:27.219433"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (1.9ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Unicef rescue Comittee"], ["image", "https://th.bing.com/th/id/OIP.5q9VrCI6R6QFwTTYn3uqKgHaDS?w=333&h=155&c=7&o=5&dpr=1.25&pid=1.7"], ["created_at", "2020-12-05 01:43:27.231254"], ["updated_at", "2020-12-05 01:43:27.231254"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (1.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Loving Hands.org"], ["image", "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Money/11November/CR-Money-Inlinehero-best-and-worst-charities-1119.png"], ["created_at", "2020-12-05 01:43:27.245928"], ["updated_at", "2020-12-05 01:43:27.245928"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (2.4ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Catholic Charities.org"], ["image", "https://www.catholiceducation.org/en/images/aaart/christinapoorlrg.jpg"], ["created_at", "2020-12-05 01:43:27.256787"], ["updated_at", "2020-12-05 01:43:27.256787"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (1.5ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Donate a Dime.org"], ["image", "http://images.clipartpanda.com/charity-clipart-charity-box.jpg"], ["created_at", "2020-12-05 01:43:27.268242"], ["updated_at", "2020-12-05 01:43:27.268242"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharity Create (2.1ms)[0m  [1m[32mINSERT INTO "charities" ("name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "The tree of life Organization"], ["image", "https://image.shutterstock.com/z/stock-vector-modern-charity-organization-   logo-charity-tree-of-life-social-event-451463587.jpg"], ["created_at", "2020-12-05 01:43:27.277608"], ["updated_at", "2020-12-05 01:43:27.277608"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/charities" for ::1 at 2020-12-04 20:45:14 -0500
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 61ms (Views: 43.9ms | ActiveRecord: 2.1ms | Allocations: 7027)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:14:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.5ms | Allocations: 2116)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:15:33 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 2104)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:16:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 3.4ms | Allocations: 2104)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:22:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.0ms | Allocations: 2116)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:26:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 1.6ms | Allocations: 6430)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:27:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 23.2ms | ActiveRecord: 0.9ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:29:22 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (20.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 58ms (Views: 37.6ms | ActiveRecord: 20.0ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:29:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:30:12 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:35:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:36:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (9.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 9.3ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:39:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.8ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:40:10 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 1.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:41:18 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 1.2ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:42:02 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.4ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:49:42 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.5ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:50:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.3ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:50:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:51:32 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:51:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:54:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:55:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:55:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.9ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 21:56:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.9ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 22:01:48 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.7ms | Allocations: 2090)
+
+
+Started GET "/charities" for ::1 at 2020-12-04 22:02:08 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 10:42:02 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 51.4ms | ActiveRecord: 0.6ms | Allocations: 6083)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 10:42:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 10:42:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 2.0ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 10:44:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 3.2ms | Allocations: 2090)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 10:50:40 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.7ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:06:23 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.7ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:12:21 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:14:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:17:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.8ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:18:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:22:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:30:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.5ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:32:08 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:34:16 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 36.6ms | ActiveRecord: 0.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:45:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 62ms (Views: 52.9ms | ActiveRecord: 0.5ms | Allocations: 6085)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:53:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.5ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:55:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.5ms | Allocations: 2090)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:55:38 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:56:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 11:57:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 92ms (Views: 89.1ms | ActiveRecord: 2.6ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 16:12:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 0.5ms | Allocations: 6083)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 16:24:42 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 16:37:02 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 2107)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 16:37:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 3.2ms | Allocations: 2089)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDonation Load (1.2ms)[0m  [1m[34mSELECT "donations".* FROM "donations" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-12-05 18:17:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.0ms | Allocations: 315)
+Completed 200 OK in 31ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 18:17:31 -0500
+Processing by CharitiesController#index as HTML
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.5ms | Allocations: 6203)
+
+
+Started GET "/charities/1" for ::1 at 2020-12-05 18:17:47 -0500
+Processing by CharitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities" WHERE "charities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/charities_controller.rb:9:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1365)
+
+
