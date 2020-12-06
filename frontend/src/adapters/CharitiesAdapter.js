@@ -6,6 +6,6 @@ class CharitiesAdapter {
 
     getCharities() {
       return fetch(this.baseUrl).then(res => res.json()
-      )
+    )
     }
 }

@@ -22,7 +22,7 @@ class Charities {
     this.adapter
     .getCharities()
     .then(charities => {
-      charities.forEach(charities => this.charities.push(charities))
+      charities.forEach(charity => this.charities.push(charity))
     })
         .then(() => {
           this.render()       
@@ -31,12 +31,13 @@ class Charities {
 
   render() {
     for (let i =0; i < this.charities.length; i++){
-    console.log ('my charities are',this.charities[i])  
+    console.log ('my charities are',this.charities[i])
+    console.log('this.charities[i].image', this.charities[i].image); 
     let placecard = document.querySelector('.placecard')
       placecard.innerHTML += `
         <li>
           <h3>${this.charities[i].name}</h3>
-          <img src=${this.charities[i].image}/>
+          <img src=${this.charities[i].image} />
         </li>
         `
       }
