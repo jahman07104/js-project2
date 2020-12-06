@@ -1,3 +1,3 @@
 class Donation < ApplicationRecord
-  belongs_to :charities
+  belongs_to :charity
 end

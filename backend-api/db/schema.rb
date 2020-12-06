@@ -23,8 +23,11 @@ ActiveRecord::Schema.define(version: 2020_12_01_013841) do
     t.string "donor_name"
     t.string "donor_email"
     t.string "donor_amount"
+    t.integer "charity_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["charity_id"], name: "index_donations_on_charity_id"
   end
 
+  add_foreign_key "donations", "charities"
 end

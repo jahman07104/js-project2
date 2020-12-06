@@ -4,6 +4,7 @@ class CreateDonations < ActiveRecord::Migration[6.0]
       t.string :donor_name
       t.string :donor_email
       t.string :donor_amount
+      t.references :charity, foreign_key: true
 
       t.timestamps
     end
