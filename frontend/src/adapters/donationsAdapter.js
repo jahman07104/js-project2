@@ -1,33 +1,29 @@
-  class Donations
+  class DonationsAdapter {
+  
     constructor() {
-      this.baseUrl = 
-      'http://localhost:3000/charities'
+      this.baseUrl = 'http://localhost:3000'
     }
 
-    addDonation() {
-      return fetch(this.baseUrl).then(res => res.json()
-      )
-    }
+    static addDonation(donation) {
+      console.log(`in addDonation function: ${JSON.stringify(donation)}`)
 
-    addDonatons(value){
-      const doantions ={
-        body: value
-      }
-      return fetch(this.baseUrl,{
+      let configObject = {
         method: 'POST',
         headers: {
           'content-type': 'application/json', 
         },
-        body: JSON.stringify({name:name, email:email, pwd:pwd })
-      })
+        body: JSON.stringify(donation)
+      }
 
-      .then(res => res.json()
-      )};
-      .then(function(data){
-      console.log(data)
-      const results = document.getElementById('results')
+      return fetch(`${BASE_URL}/donations`, configObject)
+            .then(res => res.json())
+            .then(function(donation) {
+              console.log(donation)
+              const results = document.getElementById('results')
 
-      results.innerHTML =` <p> the name of the donor is ${data.donorname}</p>
-      <p> the email of the donor is ${data.donoremail}</p>
-      <p> the amount of the donation is ${data.donationamount}</p>` 
-    
+              results.innerHTML = ` <p> the name of the donor is ${donation.donor_name}</p>
+              <p> the email of the donor is ${donation.donor_email}</p>
+              <p> the amount of the donation is ${donation.donor_amount}</p>` 
+             })
+      }
+  }

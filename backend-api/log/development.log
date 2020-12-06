@@ -35989,3 +35989,413 @@ Processing by CharitiesController#index as */*
 Completed 200 OK in 27ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 2090)
 
 
+Started GET "/charities" for ::1 at 2020-12-05 20:31:59 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as HTML
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.5ms | Allocations: 6173)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-12-05 20:32:07 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (Duration: 23.4ms | Allocations: 5090)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.2ms | Allocations: 930)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 47.2ms | Allocations: 9136)
+Completed 200 OK in 83ms (Views: 76.7ms | ActiveRecord: 0.0ms | Allocations: 10488)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-12-05 20:33:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 61.8ms | Allocations: 4007)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 15.3ms | Allocations: 703)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 230.0ms | Allocations: 7291)
+Completed 200 OK in 387ms (Views: 374.7ms | ActiveRecord: 0.0ms | Allocations: 9234)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-12-05 20:33:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (Duration: 15.2ms | Allocations: 4812)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.5ms | Allocations: 7642)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 8565)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:13:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 82ms (Views: 72.5ms | ActiveRecord: 2.8ms | Allocations: 6435)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:13:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:13:51 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 3.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:15:29 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:16:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:18:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.5ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:18:45 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:18:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:21:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:23:10 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (10.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 102ms (Views: 68.5ms | ActiveRecord: 10.7ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:27:23 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:30:33 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.5ms | Allocations: 2089)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:30:45 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.9ms | Allocations: 389)
+
+
+  
+ActionController::InvalidAuthenticityToken (The browser returned a 'null' origin for a request with origin-based forgery protection turned on. This usually
+means you have the 'no-referrer' Referrer-Policy header enabled, or that the request came from a site that
+refused to give its origin. This makes it impossible for Rails to verify the source of the requests. Likely the
+best solution is to change your referrer policy to something less strict like same-origin or strict-origin.
+If you cannot change the referrer policy, you can disable origin checking with the
+Rails.application.config.action_controller.forgery_protection_origin_check setting.
+):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:462:in `valid_request_origin?'
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:295:in `verified_request?'
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:234:in `verify_authenticity_token'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/charities" for ::1 at 2020-12-05 21:37:03 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 74ms (Views: 50.3ms | ActiveRecord: 2.6ms | Allocations: 7059)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:37:12 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 6.2ms | Allocations: 431)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+actionpack (6.0.3.4) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/charities" for ::1 at 2020-12-05 21:39:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 5.0ms | Allocations: 6460)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:39:45 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+Completed 200 OK in 263ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 11045)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:39:50 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1166)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "donations"[0m
+Started GET "/charities" for ::1 at 2020-12-05 21:41:54 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 2.2ms | Allocations: 6443)
+
+
+Started GET "/charities" for ::1 at 2020-12-05 21:42:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:42:22 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+Completed 422 Unprocessable Entity in 27ms (ActiveRecord: 2.1ms | Allocations: 6017)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Charity must exist):
+  
+app/controllers/donations_controller.rb:9:in `create'
+Started GET "/charities" for ::1 at 2020-12-05 21:43:54 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 17.2ms | ActiveRecord: 3.7ms | Allocations: 6440)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:44:03 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (6.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", ""], ["created_at", "2020-12-06 02:44:03.780564"], ["updated_at", "2020-12-06 02:44:03.780564"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 110ms (Views: 0.5ms | ActiveRecord: 34.3ms | Allocations: 13257)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:44:06 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (50.7ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", ""], ["created_at", "2020-12-06 02:44:06.578932"], ["updated_at", "2020-12-06 02:44:06.578932"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (271.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 558ms (Views: 39.2ms | ActiveRecord: 322.5ms | Allocations: 8905)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:44:25 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (13.7ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", ""], ["created_at", "2020-12-06 02:44:25.694881"], ["updated_at", "2020-12-06 02:44:25.694881"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 270ms (Views: 0.4ms | ActiveRecord: 24.3ms | Allocations: 7865)
+
+
+Started POST "/donations" for ::1 at 2020-12-05 21:44:26 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (28.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", ""], ["created_at", "2020-12-06 02:44:26.032184"], ["updated_at", "2020-12-06 02:44:26.032184"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (75.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 278ms (Views: 0.8ms | ActiveRecord: 104.1ms | Allocations: 8917)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "donations"[0m

@@ -12,8 +12,8 @@ class CharitiesController < ApplicationController
   end
 
   def create
- binding.pry
-    @charity = Charity.create(note_params)
+ #binding.pry
+    @charity = Charity.create(charity_params)
 
     render json:@charity, status: 200
   end

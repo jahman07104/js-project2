@@ -1,4 +1,7 @@
  // Search Input
+
+const BASE_URL = 'http://localhost:3000'
+
 const searchCharity = document.getElementById('searchCharity');
 // Search input
 searchCharity.addEventListener('keyup',(e) => {
@@ -44,8 +47,6 @@ class Charities {
     }
   }
 
-
-
 //  variables for popup
 const button = document.querySelector('.button');
 const popup = document.querySelector('.popup-wrapper');
@@ -70,12 +71,16 @@ popup.addEventListener('click', () => {
 });
 
 // Donor form
-form.addEventListener('submit', function(e){
+form.addEventListener('submit', function(e) {
   // prevent auto submission
   e.preventDefault()
+  console.log('submitting donation form')
   const name = document.getElementById('name').value
   const email = document.getElementById('email').value
-  const pwd =document.getElementById('pwd').value
+  const amount =document.getElementById('pwd').value
+  let donation = new Donation({ donor_name: name, donor_email: email, donor_amount: amount })
+  //adapter = new DonationsAdapter()
+  DonationsAdapter.addDonation(donation)
 })
 
 // make Donor Post request
