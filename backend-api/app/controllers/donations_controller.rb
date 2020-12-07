@@ -17,8 +17,14 @@ class DonationsController < ApplicationController
     render json: @donation, status: 200
   end
 
+  def update
+    @donation = Donation.find(params[:id])
+    @donation.update(donation_params)
+    render json: @donation, status: 200
+  end
+
   private
     def donation_params
-      params.require(:donation).permit(:donor_name, :donor_email, :donor_amount)
+      params.require(:donation).permit(:id, :charity_id, :donor_name, :donor_email, :donor_amount)
     end
 end

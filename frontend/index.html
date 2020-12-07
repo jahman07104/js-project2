@@ -17,7 +17,7 @@
   
     <div class="collapse navbar-collapse" id="navbarColor03">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home
             <span class="sr-only">(current)</span>
           </a>
@@ -32,15 +32,15 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
+          <!-- <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
+            <div class="dropdown-divider"></div> -->
+            <!-- <a class="dropdown-item" href="#">Separated link</a>
+          </div> --> -->
+        <!-- </li> -->
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -56,22 +56,20 @@
 </div>
   <div class="container searchContainer">
     <div class="search card card-body">
-      <h1>Choose a  Charity</h1>
-      <p class="lead">Enter a charity name to fetch a charity profile</p>
-      <input type="text" id="searchCharity" class="form-control" placeholder="Charity FInder">
-      <form id="form" method="post">
+      <h1>Donate to one of these fine Charities</h1>
+      <p class="lead">sign up to be a donor</p>
+      
+      <form id="create-donation" method="post">
+        <input type="text" id="charity-id" class="form-control" placeholder="Charity ID">
         <input type="text" id="name" placeholder="Donor Name">
         <input type="text" id="email" placeholder="Donor email">
         <input type="text" id="amount" placeholder="Donation Amount">
         <input type="submit" value=" Add Donor ">
-      </form>
+      </form>     
+      <div id="results">
+      </div>
     </div>
     <br>
-
-    <!-- <div class="flex-container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div> -->
       
       
       <div>
@@ -79,35 +77,17 @@
         </ul>
       </div>
     </div>
-    
-    <br>
-    
-  <div class = "form-group">
-      <form role = "form"></form>
-        <label for = "name">Select from list</label>
-        <select class = "form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-        </select>
-  </div>
     </form>
-    
-<div class="popup-wrapper">
+
+    <form action="" id="update-donation" method="post">
+
+    <!-- <div class="popup-wrapper">
     <div class="popup">
       <div class="popup-close">x</div>
       <div class="popup-content">
         <h2>
-       
-          <form action="/action_page.php" id ="form" method="post">
-            <div id="results">
+          <form action="/action_page.php" method="post">
 
-            </div>
             <div class="form-group">
               <label for="name">Donor Name:</label>
               <input type="name" class="form-control" id="name">
@@ -118,27 +98,23 @@
             </div>
             <div class="form-group">
               <label for="pwd">Donation amount:</label>
-              <input type="password" class="form-control" id="pwd">
+              <input type="text" class="form-control" id="amt">
             </div>
             <div class="checkbox">
               <label><input type="checkbox"> Remember me</label>
             </div>
             <button color: red type="submit" class="btn  btn-default">Submit</button>
           </form>
-          <p>your updated info</p>
-          <!-- <a href="#">Submit your donation</a> -->
+          <p>your updated info</p>    
         </h2>
-      </div>
-      <!-- <ul class= "placecard">
-        <button class="btn">Add li</button>
-      </ul> -->
+      </div> -->
     </div>
 
   </div>
 <br>
 <br>
   </div>   
-  <button class="button">updated info</button>
+  <button class="button">Update Donor Info</button>
   <div class="popup-wrapper">
     <div class="popup">
       <div class="popup-close">x</div>
@@ -161,6 +137,7 @@
 
 <script src="src/components/charities.js"></script>
 <script src="src/components/donation.js"></script>
+<script src="src/components/donations.js"></script>
 <script src="src/components/app.js"></script>
 <script src="src/adapters/CharitiesAdapter.js"></script>
 <script src="src/adapters/DonationsAdapter.js"></script>

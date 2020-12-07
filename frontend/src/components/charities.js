@@ -1,16 +1,6 @@
  // Search Input
 
-const BASE_URL = 'http://localhost:3000'
 
-const searchCharity = document.getElementById('searchCharity');
-// Search input
-searchCharity.addEventListener('keyup',(e) => {
-  // to get input text from donor
-  const donorText = e.target.value;
-    if (donorText !== ''){
-    console.log(donorText)
-  }
-});
 class Charities {
   constructor(id, name, image){
     this.charities = []
@@ -39,49 +29,11 @@ class Charities {
     let placecard = document.querySelector('.placecard')
       placecard.innerHTML += `
         <li>
-          <h3>${this.charities[i].name}</h3>
+          <h3>${this.charities[i].name} (Charity ID = ${this.charities[i].id})</h3>
           <img src=${this.charities[i].image} />
         </li>
         `
       }
     }
   }
-
-//  variables for popup
-const button = document.querySelector('.button');
-const popup = document.querySelector('.popup-wrapper');
-const close = document.querySelector('.popup-close'); 
-const form = document.getElementById('form')
-
-
-// Donor pop up maybe for third fetch to update.??
-button.addEventListener('click', () => {
-  popup.style.display = 'block';
-
-});
-
-close.addEventListener('click', () => {
-  popup.style.display = 'none';
-
-});
-
-popup.addEventListener('click', () => {
-  popup.style.display = 'none';
-
-});
-
-// Donor form
-form.addEventListener('submit', function(e) {
-  // prevent auto submission
-  e.preventDefault()
-  console.log('submitting donation form')
-  const name = document.getElementById('name').value
-  const email = document.getElementById('email').value
-  const amount =document.getElementById('pwd').value
-  let donation = new Donation({ donor_name: name, donor_email: email, donor_amount: amount })
-  //adapter = new DonationsAdapter()
-  DonationsAdapter.addDonation(donation)
-})
-
-// make Donor Post request
 
