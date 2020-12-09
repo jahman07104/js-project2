@@ -12,10 +12,23 @@ class CharitiesController < ApplicationController
   end
 
   def create
- #binding.pry
     @charity = Charity.create(charity_params)
 
     render json:@charity, status: 200
+  end
+
+  def update
+    @charity = Charity.find(params[:id])
+    @charity.update(charity_params)
+
+    render json:@charity, status: 200
+  end
+
+  def destroy
+    @charity = Charity.find(params[:id])
+    @charity.delete
+
+    render json: {charityId: @charity.id}
   end
 
   private

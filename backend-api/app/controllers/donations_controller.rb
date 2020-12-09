@@ -23,6 +23,13 @@ class DonationsController < ApplicationController
     render json: @donation, status: 200
   end
 
+  def delete
+    @donation = DOnation.find(params[:id])
+    @donation.delete
+
+    render json: {donationId: @donation.id}
+  end
+
   private
     def donation_params
       params.require(:donation).permit(:id, :charity_id, :donor_name, :donor_email, :donor_amount)

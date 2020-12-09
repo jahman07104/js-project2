@@ -17,37 +17,12 @@
   
     <div class="collapse navbar-collapse" id="navbarColor03">
       <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Donation Amount</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
-          <!-- <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div> -->
-            <!-- <a class="dropdown-item" href="#">Separated link</a>
-          </div> --> -->
-        <!-- </li> -->
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
-    </div>
-  </nav>
+    </div> 
   <div id="Charity-header" >
     <img 
       src="https://cdn.shopify.com/s/files/1/0104/7098/1690/products/goat_51dfa9fc-ba2b-4154-9ffa-088ad053c4f3_736x736.jpg?v=1603266051"
@@ -57,76 +32,65 @@
   <div class="container searchContainer">
     <div class="search card card-body">
       <h1>Donate to one of these fine Charities</h1>
-      <p class="lead">sign up to be a donor</p>
+      <p class="lead">choose a charity by its Id to donate</p>
       
-      <form id="create-donation" method="post">
+      <form id="create-donation" method="post" style="display: none">
         <input type="text" id="charity-id" class="form-control" placeholder="Charity ID">
         <input type="text" id="name" placeholder="Donor Name">
         <input type="text" id="email" placeholder="Donor email">
         <input type="text" id="amount" placeholder="Donation Amount">
         <input type="submit" value=" Add Donor ">
       </form>     
-      <div id="results">
-      </div>
+        <div id="results">
+        </div>
     </div>
-    <br>
-      
-      
+      <br>
       <div>
         <ul class= "placecard">
         </ul>
       </div>
-    </div>
-    </form>
-
+  </div>
     <form action="" id="update-donation" method="post">
-
-    <!-- <div class="popup-wrapper">
-    <div class="popup">
-      <div class="popup-close">x</div>
-      <div class="popup-content">
-        <h2>
-          <form action="/action_page.php" method="post">
-
-            <div class="form-group">
-              <label for="name">Donor Name:</label>
-              <input type="name" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-              <label for="email">Donor Email :</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-              <label for="pwd">Donation amount:</label>
-              <input type="text" class="form-control" id="amt">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div>
-            <button color: red type="submit" class="btn  btn-default">Submit</button>
-          </form>
-          <p>your updated info</p>    
-        </h2>
-      </div> -->
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup-close">x</div>
+            <div class="popup-content">
+              <h2>
+                <form action="/action_page.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Donor Name:</label>
+                    <input type="name" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Donor Email :</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Donation amount:</label>
+                    <input type="text" class="form-control" id="amt">
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                  </div>
+                 
+                </form>
+                <p>your updated info</p>    
+              </h2>
+      </div>
     </div>
-
   </div>
 <br>
 <br>
   </div>   
-  <button class="button">Update Donor Info</button>
+ 
+  
   <div class="popup-wrapper">
     <div class="popup">
       <div class="popup-close">x</div>
       <div class="popup-content">
-        <h2>
-          <p>me</p>
-          <a href="#">Click</a>
-        </h2>
+
       </div>
-
     </div>
-
   </div>
   <footer class="mt-5 p-3 text-center bg-light">
     Charity Finder &copy;
