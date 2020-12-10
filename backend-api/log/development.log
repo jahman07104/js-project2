@@ -40243,3 +40243,2451 @@ Processing by DonationsController#update as */*
 Completed 200 OK in 103ms (Views: 0.5ms | ActiveRecord: 66.5ms | Allocations: 9662)
 
 
+Started GET "/charities" for ::1 at 2020-12-08 21:35:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 25.5ms | ActiveRecord: 0.5ms | Allocations: 6102)
+
+
+Started POST "/donations" for ::1 at 2020-12-08 21:35:18 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (19.4ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-09 02:35:18.043774"], ["updated_at", "2020-12-09 02:35:18.043774"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 56ms (Views: 0.4ms | ActiveRecord: 35.3ms | Allocations: 7881)
+
+
+Started PUT "/donations/114" for ::1 at 2020-12-08 21:35:33 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"114", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500ew.00", "donation"=>{"id"=>"114", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500ew.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 114], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (15.2ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "500ew.00"], ["updated_at", "2020-12-09 02:35:33.725334"], ["id", 114]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (48.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 80ms (Views: 0.8ms | ActiveRecord: 63.7ms | Allocations: 9674)
+
+
+Started GET "/charities" for ::1 at 2020-12-08 21:36:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-12-08 21:36:28 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (Duration: 25.6ms | Allocations: 5090)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 6.1ms | Allocations: 930)
+  Rendered /home/jahman07104/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 48.9ms | Allocations: 9247)
+Completed 200 OK in 65ms (Views: 58.5ms | ActiveRecord: 0.0ms | Allocations: 11245)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 08:27:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"30", "donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "charity_id"=>"30"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (11.3ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "500.00"], ["charity_id", 30], ["created_at", "2020-12-09 13:27:29.157167"], ["updated_at", "2020-12-09 13:27:29.157167"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (19.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 39ms (Views: 0.4ms | ActiveRecord: 30.9ms | Allocations: 4846)
+
+
+Started PUT "/donations/115" for ::1 at 2020-12-09 08:27:59 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"115", "donor_name"=>"Patrick", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"900.00", "donation"=>{"id"=>"115", "donor_name"=>"Patrick", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"900.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (10.0ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "900.00"], ["updated_at", "2020-12-09 13:27:59.843524"], ["id", 115]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 105ms (Views: 1.7ms | ActiveRecord: 28.8ms | Allocations: 9558)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 08:28:33 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.2ms | Allocations: 2093)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 08:28:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 08:29:12 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 09:32:38 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.4ms | Allocations: 6120)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 09:33:27 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 09:34:26 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 09:35:14 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"27", "donor_name"=>"James Bates", "donor_email"=>"james@bellatlantic.net", "donor_amount"=>"250", "donation"=>{"donor_name"=>"James Bates", "donor_email"=>"james@bellatlantic.net", "donor_amount"=>"250", "charity_id"=>"27"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (4.8ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "James Bates"], ["donor_email", "james@bellatlantic.net"], ["donor_amount", "250"], ["charity_id", 27], ["created_at", "2020-12-09 14:35:14.753197"], ["updated_at", "2020-12-09 14:35:14.753197"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 9.1ms | Allocations: 9963)
+
+
+Started PUT "/donations/116" for ::1 at 2020-12-09 09:35:30 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"116", "donor_name"=>"James", "donor_email"=>"james@bellatlantic.net", "donor_amount"=>"280", "donation"=>{"id"=>"116", "donor_name"=>"James", "donor_email"=>"james@bellatlantic.net", "donor_amount"=>"280"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (12.1ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "James"], ["donor_amount", "280"], ["updated_at", "2020-12-09 14:35:30.047026"], ["id", 116]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (81.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 109ms (Views: 0.5ms | ActiveRecord: 94.0ms | Allocations: 5076)
+
+
+Started GET "/charities" for 127.0.0.1 at 2020-12-09 14:30:40 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 139ms (Views: 123.6ms | ActiveRecord: 2.6ms | Allocations: 7433)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:31:07 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:31:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:31:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:31:21 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.5ms | Allocations: 2092)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:46:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (6.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 67ms (Views: 59.1ms | ActiveRecord: 6.8ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:47:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 1.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:50:22 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:50:48 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 14:51:00 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (1.8ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-09 19:51:01.051361"], ["updated_at", "2020-12-09 19:51:01.051361"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 13.6ms | Allocations: 14519)
+
+
+Started PUT "/donations/117" for ::1 at 2020-12-09 14:51:14 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"117", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"000.00", "donation"=>{"id"=>"117", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"000.00"}}
+  [1m[36mDonation Load (2.7ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 117], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (2.3ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "000.00"], ["updated_at", "2020-12-09 19:51:14.183000"], ["id", 117]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (20.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 55ms (Views: 2.6ms | ActiveRecord: 25.4ms | Allocations: 4840)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:51:34 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:53:24 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:53:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 14:57:40 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 36.7ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:08:59 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:12:07 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:12:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:13:41 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:13:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:15:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:17:22 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:22:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 22.4ms | ActiveRecord: 0.5ms | Allocations: 6119)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:23:27 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:30:58 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 2098)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:31:23 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:32:06 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:32:27 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:32:46 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:33:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:34:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:35:21 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:37:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:37:51 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:38:18 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:42:08 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:45:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 2.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:45:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.9ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:46:29 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:46:41 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.7ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:47:24 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (10.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 82ms (Views: 70.8ms | ActiveRecord: 10.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:50:24 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:53:05 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:53:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:54:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:36 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:43 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 26.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:50 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:51 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:55:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 3.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:56:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 15:56:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:08:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.7ms | Allocations: 2096)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:10:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (14.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 80ms (Views: 61.6ms | ActiveRecord: 14.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:14:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:15:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:15:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:18:43 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:19:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:19:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:21:35 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.7ms | Allocations: 4140)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:26:10 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 29.7ms | ActiveRecord: 3.4ms | Allocations: 6436)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:27:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:27:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:32:02 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (4.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 75ms (Views: 69.8ms | ActiveRecord: 4.5ms | Allocations: 3058)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:36:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:39:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 90ms (Views: 88.8ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:42:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 2.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:42:19 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:42:50 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 16:43:03 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Victor Harrison", "donor_email"=>"vic@comcast.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Victor Harrison", "donor_email"=>"vic@comcast.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (14.4ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Victor Harrison"], ["donor_email", "vic@comcast.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-09 21:43:03.732134"], ["updated_at", "2020-12-09 21:43:03.732134"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (30.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 69ms (Views: 0.4ms | ActiveRecord: 46.5ms | Allocations: 11615)
+
+
+Started PUT "/donations/118" for ::1 at 2020-12-09 16:43:19 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"118", "donor_name"=>"Victor", "donor_email"=>"vic@comcast.net", "donor_amount"=>"0.00", "donation"=>{"id"=>"118", "donor_name"=>"Victor", "donor_email"=>"vic@comcast.net", "donor_amount"=>"0.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 118], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (28.9ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Victor"], ["donor_amount", "0.00"], ["updated_at", "2020-12-09 21:43:19.673462"], ["id", 118]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 98ms (Views: 0.4ms | ActiveRecord: 35.4ms | Allocations: 7625)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:43:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.5ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:45:07 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 92ms (Views: 89.1ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:46:38 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 16:46:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 17:29:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 46ms (Views: 38.5ms | ActiveRecord: 0.7ms | Allocations: 6102)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 17:29:45 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 2.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 17:51:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 2095)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 18:05:25 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (17.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-09 23:05:26.016172"], ["updated_at", "2020-12-09 23:05:26.016172"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 77ms (Views: 0.4ms | ActiveRecord: 32.8ms | Allocations: 14054)
+
+
+Started PUT "/donations/119" for ::1 at 2020-12-09 18:05:39 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"119", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"0.00", "donation"=>{"id"=>"119", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"0.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 119], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (11.0ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "0.00"], ["updated_at", "2020-12-09 23:05:39.693132"], ["id", 119]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 119ms (Views: 0.4ms | ActiveRecord: 22.0ms | Allocations: 9675)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:11:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.6ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:16:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:18:26 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (4.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 69ms (Views: 64.1ms | ActiveRecord: 4.0ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:21:03 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:21:25 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 80ms (Views: 74.2ms | ActiveRecord: 3.5ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:21:38 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:21:58 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (8.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 33.0ms | ActiveRecord: 8.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:25:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 80ms (Views: 72.5ms | ActiveRecord: 0.4ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:33:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 34.8ms | ActiveRecord: 1.1ms | Allocations: 6120)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:40:07 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:40:38 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:41:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:42:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 18:44:48 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.5ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-09 23:44:48.130566"], ["updated_at", "2020-12-09 23:44:48.130566"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (17.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 22.9ms | Allocations: 13020)
+
+
+Started PUT "/donations/120" for ::1 at 2020-12-09 18:45:04 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"120", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"70.00", "donation"=>{"id"=>"120", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"70.00"}}
+  [1m[36mDonation Load (0.6ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 120], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (10.6ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "70.00"], ["updated_at", "2020-12-09 23:45:04.212007"], ["id", 120]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 101ms (Views: 0.6ms | ActiveRecord: 19.5ms | Allocations: 9673)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:46:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 18:46:25 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Brooklyn Nets", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Brooklyn Nets", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (16.4ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Brooklyn Nets"], ["donor_email", "Hurlerco@hotmail.com"], ["donor_amount", "1,000.00"], ["charity_id", 25], ["created_at", "2020-12-09 23:46:25.032845"], ["updated_at", "2020-12-09 23:46:25.032845"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (27.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 43.6ms | Allocations: 8937)
+
+
+Started PUT "/donations/121" for ::1 at 2020-12-09 18:46:35 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"121", "donor_name"=>"Brooklyn", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00", "donation"=>{"id"=>"121", "donor_name"=>"Brooklyn", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00"}}
+  [1m[36mDonation Load (0.3ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 121], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (17.0ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Brooklyn"], ["updated_at", "2020-12-09 23:46:35.533884"], ["id", 121]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (30.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 80ms (Views: 0.6ms | ActiveRecord: 47.8ms | Allocations: 9524)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:50:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:51:20 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.5ms | Allocations: 3058)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:51:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:58:24 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 130ms (Views: 127.9ms | ActiveRecord: 0.5ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 18:58:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 18:59:01 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Victor Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Victor Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (31.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Victor Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-09 23:59:01.469206"], ["updated_at", "2020-12-09 23:59:01.469206"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 84ms (Views: 10.1ms | ActiveRecord: 39.7ms | Allocations: 8935)
+
+
+Started PUT "/donations/122" for ::1 at 2020-12-09 18:59:19 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"122", "donor_name"=>"Victor", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"16.00", "donation"=>{"id"=>"122", "donor_name"=>"Victor", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"16.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 122], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (13.9ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Victor"], ["donor_amount", "16.00"], ["updated_at", "2020-12-09 23:59:19.862252"], ["id", 122]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 76ms (Views: 0.5ms | ActiveRecord: 29.7ms | Allocations: 9556)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:00:00 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 1.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:00:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 1.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:01:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:02:15 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (5.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 46.9ms | ActiveRecord: 5.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:02:35 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: 60.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:03:00 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 0.7ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:03:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:03:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:03:41 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 1.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:04:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:04:34 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:05:07 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.4ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:05:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:06:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:06:34 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:25:01 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 1.7ms | Allocations: 2095)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:26:35 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:34:11 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.5ms | Allocations: 6118)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:34:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 64ms (Views: 55.4ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:35:08 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:35:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 156ms (Views: 153.8ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:35:10 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 1.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:35:12 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 2.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 19:35:22 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (12.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 00:35:22.075694"], ["updated_at", "2020-12-10 00:35:22.075694"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 65ms (Views: 0.4ms | ActiveRecord: 20.1ms | Allocations: 13038)
+
+
+Started PUT "/donations/123" for ::1 at 2020-12-09 19:35:30 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"123", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"id"=>"123", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (2.9ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (10.2ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 00:35:30.991608"], ["id", 123]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 85ms (Views: 0.5ms | ActiveRecord: 20.4ms | Allocations: 10632)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:37:06 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:37:26 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:38:20 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 1.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:40:05 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 19:40:32 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"27", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"27"}}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (22.7ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 27], ["created_at", "2020-12-10 00:40:32.207916"], ["updated_at", "2020-12-10 00:40:32.207916"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 80ms (Views: 0.8ms | ActiveRecord: 34.2ms | Allocations: 7889)
+
+
+Started PUT "/donations/124" for ::1 at 2020-12-09 19:40:43 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"124", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"8.00", "donation"=>{"id"=>"124", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"8.00"}}
+  [1m[36mDonation Load (0.9ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (13.6ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "8.00"], ["updated_at", "2020-12-10 00:40:43.725028"], ["id", 124]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 80ms (Views: 0.5ms | ActiveRecord: 27.3ms | Allocations: 8022)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:43:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:44:06 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:45:10 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 1.1ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:47:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:48:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 2.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:49:00 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:49:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:52:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.5ms | Allocations: 3058)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:54:43 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.6ms | Allocations: 2081)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:57:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 2.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:57:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 2.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 19:58:32 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.4ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:00:58 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:01:29 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:01:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:02:05 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:02:22 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:02:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:02:55 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:03:14 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:03:31 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 1.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:04:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:04:41 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"jimmy Dean", "donor_email"=>"jimmy@verizon.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"jimmy Dean", "donor_email"=>"jimmy@verizon.net", "donor_amount"=>"1,000.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (15.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "jimmy Dean"], ["donor_email", "jimmy@verizon.net"], ["donor_amount", "1,000.00"], ["charity_id", 25], ["created_at", "2020-12-10 01:04:41.217120"], ["updated_at", "2020-12-10 01:04:41.217120"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (47.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 76ms (Views: 0.8ms | ActiveRecord: 62.5ms | Allocations: 5426)
+
+
+Started PUT "/donations/125" for ::1 at 2020-12-09 20:04:54 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"125", "donor_name"=>"jimmy", "donor_email"=>"jimmy@verizon.net", "donor_amount"=>"45", "donation"=>{"id"=>"125", "donor_name"=>"jimmy", "donor_email"=>"jimmy@verizon.net", "donor_amount"=>"45"}}
+  [1m[36mDonation Load (1.8ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 125], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (7.4ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "jimmy"], ["donor_amount", "45"], ["updated_at", "2020-12-10 01:04:54.653493"], ["id", 125]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (25.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 81ms (Views: 0.4ms | ActiveRecord: 35.0ms | Allocations: 7969)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:06:51 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:07:22 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"28", "donor_name"=>"Patrick Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500.00", "charity_id"=>"28"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (16.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "Hurlerco@hotmail.com"], ["donor_amount", "500.00"], ["charity_id", 28], ["created_at", "2020-12-10 01:07:22.248741"], ["updated_at", "2020-12-10 01:07:22.248741"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (37.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 69ms (Views: 0.3ms | ActiveRecord: 54.3ms | Allocations: 7414)
+
+
+Started PUT "/donations/126" for ::1 at 2020-12-09 20:07:26 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"126", "donor_name"=>"Patrick", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500.00", "donation"=>{"id"=>"126", "donor_name"=>"Patrick", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (8.5ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 01:07:26.453436"], ["id", 126]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (25.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 71ms (Views: 1.3ms | ActiveRecord: 34.1ms | Allocations: 5824)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:07:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 39ms (Views: 28.3ms | ActiveRecord: 0.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:07:58 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (2.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 2.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:08:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:09:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.4ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:09:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 3.8ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:11:41 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:13:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:16:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:18:42 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:37:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.5ms | Allocations: 6118)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:39:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 1.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:40:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:41:18 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 44.7ms | ActiveRecord: 1.0ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:41:43 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 01:41:43.840246"], ["updated_at", "2020-12-10 01:41:43.840246"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 45ms (Views: 0.8ms | ActiveRecord: 10.1ms | Allocations: 10363)
+
+
+Started PUT "/donations/127" for ::1 at 2020-12-09 20:41:54 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"127", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"78", "donation"=>{"id"=>"127", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"78"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 127], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (6.9ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "78"], ["updated_at", "2020-12-10 01:41:54.903556"], ["id", 127]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 84ms (Views: 0.6ms | ActiveRecord: 15.2ms | Allocations: 8633)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:44:36 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:45:36 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:46:03 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (18.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 01:46:03.683341"], ["updated_at", "2020-12-10 01:46:03.683341"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 53ms (Views: 0.6ms | ActiveRecord: 27.6ms | Allocations: 3755)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:49:26 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (17.1ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 01:49:26.463486"], ["updated_at", "2020-12-10 01:49:26.463486"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (19.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 36.7ms | Allocations: 4847)
+
+
+Started PUT "/donations/128" for ::1 at 2020-12-09 20:49:37 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"128", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"6789", "donation"=>{"id"=>"128", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"6789"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 128], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (4.2ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "6789"], ["updated_at", "2020-12-10 01:49:37.682077"], ["id", 128]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 9.5ms | Allocations: 9477)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:50:02 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"28", "donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"28"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (3.2ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Brooklyn Nets"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 28], ["created_at", "2020-12-10 01:50:02.232429"], ["updated_at", "2020-12-10 01:50:02.232429"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 9.0ms | Allocations: 5940)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:51:45 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.8ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:51:56 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (12.5ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Clarita M Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 01:51:56.448980"], ["updated_at", "2020-12-10 01:51:56.448980"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 47ms (Views: 0.4ms | ActiveRecord: 18.6ms | Allocations: 7889)
+
+
+Started PUT "/donations/131" for ::1 at 2020-12-09 20:52:07 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"131", "donor_name"=>"Clarita", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"60", "donation"=>{"id"=>"131", "donor_name"=>"Clarita", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"60"}}
+  [1m[36mDonation Load (5.1ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 131], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (5.5ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Clarita"], ["donor_amount", "60"], ["updated_at", "2020-12-10 01:52:07.527860"], ["id", 131]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 63ms (Views: 0.4ms | ActiveRecord: 23.6ms | Allocations: 6442)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:53:04 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.8ms | Allocations: 3058)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:53:17 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"30", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"30"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (28.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 30], ["created_at", "2020-12-10 01:53:17.839779"], ["updated_at", "2020-12-10 01:53:17.839779"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 31.7ms | Allocations: 4745)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:56:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:56:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:56:43 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"29", "donor_name"=>"jimmy Dean", "donor_email"=>"fddj@fjfu.com", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"jimmy Dean", "donor_email"=>"fddj@fjfu.com", "donor_amount"=>"1,000.00", "charity_id"=>"29"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (29.5ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "jimmy Dean"], ["donor_email", "fddj@fjfu.com"], ["donor_amount", "1,000.00"], ["charity_id", 29], ["created_at", "2020-12-10 01:56:43.802877"], ["updated_at", "2020-12-10 01:56:43.802877"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 85ms (Views: 0.7ms | ActiveRecord: 38.2ms | Allocations: 7889)
+
+
+Started PUT "/donations/133" for ::1 at 2020-12-09 20:56:57 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"133", "donor_name"=>"jimmy", "donor_email"=>"fddj@fjfu.com", "donor_amount"=>"7676767", "donation"=>{"id"=>"133", "donor_name"=>"jimmy", "donor_email"=>"fddj@fjfu.com", "donor_amount"=>"7676767"}}
+  [1m[36mDonation Load (0.3ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 133], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (1.6ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "jimmy"], ["donor_amount", "7676767"], ["updated_at", "2020-12-10 01:56:57.342300"], ["id", 133]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 66ms (Views: 0.7ms | ActiveRecord: 17.1ms | Allocations: 9655)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:58:12 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (10.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 10.5ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 20:58:25 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"28", "donor_name"=>"silk pyjamas", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,688.00", "donation"=>{"donor_name"=>"silk pyjamas", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,688.00", "charity_id"=>"28"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.5ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "silk pyjamas"], ["donor_email", "Hurlerco@hotmail.com"], ["donor_amount", "1,688.00"], ["charity_id", 28], ["created_at", "2020-12-10 01:58:25.096147"], ["updated_at", "2020-12-10 01:58:25.096147"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 57ms (Views: 1.3ms | ActiveRecord: 11.1ms | Allocations: 7321)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 20:59:52 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:00:03 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"27", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"27"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (4.2ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 27], ["created_at", "2020-12-10 02:00:03.899168"], ["updated_at", "2020-12-10 02:00:03.899168"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 62ms (Views: 0.8ms | ActiveRecord: 9.2ms | Allocations: 8845)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:00:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (6.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 112ms (Views: 102.6ms | ActiveRecord: 6.1ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:00:47 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:00:57 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"31", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"31"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.1ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 31], ["created_at", "2020-12-10 02:00:57.807294"], ["updated_at", "2020-12-10 02:00:57.807294"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (25.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 59ms (Views: 0.5ms | ActiveRecord: 31.1ms | Allocations: 8932)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:03:49 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (8.1ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 8.1ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:03:54 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:04:01 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (19.4ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-10 02:04:01.368807"], ["updated_at", "2020-12-10 02:04:01.368807"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (28.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 103ms (Views: 0.6ms | ActiveRecord: 47.7ms | Allocations: 2753)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:05:40 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:09:24 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 1.6ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:09:28 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (6.2ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 6.2ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:11:43 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.4ms | Allocations: 2078)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:13:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.6ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:16:32 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (25.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 83ms (Views: 56.5ms | ActiveRecord: 25.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:19:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 25.4ms | ActiveRecord: 1.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:19:59 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:21:30 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.7ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:21:37 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:22:22 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:33:31 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (10.2ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Brooklyn Nets"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-10 02:33:31.178584"], ["updated_at", "2020-12-10 02:33:31.178584"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 54ms (Views: 0.5ms | ActiveRecord: 28.9ms | Allocations: 8932)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:33:48 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (15.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 02:33:48.660508"], ["updated_at", "2020-12-10 02:33:48.660508"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (20.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 53ms (Views: 0.4ms | ActiveRecord: 36.3ms | Allocations: 7321)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:36:05 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.5ms | Allocations: 3526)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:36:12 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (7.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 02:36:12.965155"], ["updated_at", "2020-12-10 02:36:12.965155"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 68ms (Views: 0.5ms | ActiveRecord: 18.7ms | Allocations: 9925)
+
+
+Started PUT "/donations/140" for ::1 at 2020-12-09 21:36:29 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"140", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"id"=>"140", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (12.1ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 02:36:29.482278"], ["id", 140]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 72ms (Views: 0.4ms | ActiveRecord: 18.9ms | Allocations: 4366)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:37:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 61ms (Views: 46.7ms | ActiveRecord: 3.4ms | Allocations: 6451)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:37:58 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 3.9ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:38:06 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Clarita M Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500", "donation"=>{"donor_name"=>"Clarita M Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"500", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.1ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Clarita M Harrison"], ["donor_email", "Hurlerco@hotmail.com"], ["donor_amount", "500"], ["charity_id", 25], ["created_at", "2020-12-10 02:38:06.462839"], ["updated_at", "2020-12-10 02:38:06.462839"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 65ms (Views: 0.5ms | ActiveRecord: 14.2ms | Allocations: 9481)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:39:44 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:40:53 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (9.9ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 5.2ms | ActiveRecord: 9.9ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:40:57 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (4.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 4.3ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:41:07 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (6.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 25], ["created_at", "2020-12-10 02:41:07.558364"], ["updated_at", "2020-12-10 02:41:07.558364"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (27.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 65ms (Views: 0.5ms | ActiveRecord: 33.1ms | Allocations: 3720)
+
+
+Started PUT "/donations/142" for ::1 at 2020-12-09 21:41:24 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"142", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"id"=>"142", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (9.3ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 02:41:24.970205"], ["id", 142]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 51ms (Views: 0.5ms | ActiveRecord: 18.5ms | Allocations: 7611)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:47:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (4.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 35.4ms | ActiveRecord: 4.3ms | Allocations: 2095)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:47:56 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"30", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"30"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (16.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 30], ["created_at", "2020-12-10 02:47:56.424707"], ["updated_at", "2020-12-10 02:47:56.424707"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (19.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 111ms (Views: 0.4ms | ActiveRecord: 36.5ms | Allocations: 7889)
+
+
+Started PUT "/donations/143" for ::1 at 2020-12-09 21:48:05 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"143", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"id"=>"143", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (21.5ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 02:48:05.634149"], ["id", 143]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 64ms (Views: 0.4ms | ActiveRecord: 27.5ms | Allocations: 9490)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:48:13 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (12.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 26.3ms | ActiveRecord: 12.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:48:20 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"silk pyjamas", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"silk pyjamas", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (6.7ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "silk pyjamas"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-10 02:48:20.867375"], ["updated_at", "2020-12-10 02:48:20.867375"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 84ms (Views: 2.0ms | ActiveRecord: 12.2ms | Allocations: 7892)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:53:59 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.6ms | Allocations: 2343)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:55:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.7ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 1.7ms | Allocations: 2080)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:55:17 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (3.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 18.2ms | ActiveRecord: 3.3ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 21:55:24 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (4.2ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 25], ["created_at", "2020-12-10 02:55:24.442014"], ["updated_at", "2020-12-10 02:55:24.442014"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (32.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 70ms (Views: 1.3ms | ActiveRecord: 37.2ms | Allocations: 4899)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 21:57:11 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:00:00 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"", "donor_email"=>"", "donor_amount"=>"", "donation"=>{"donor_name"=>"", "donor_email"=>"", "donor_amount"=>"", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (15.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", ""], ["donor_email", ""], ["donor_amount", ""], ["charity_id", 25], ["created_at", "2020-12-10 03:00:00.416161"], ["updated_at", "2020-12-10 03:00:00.416161"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 80ms (Views: 1.4ms | ActiveRecord: 28.8ms | Allocations: 5018)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:03:16 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (4.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 4.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:03:27 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (12.1ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:03:27.158318"], ["updated_at", "2020-12-10 03:03:27.158318"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 50ms (Views: 0.5ms | ActiveRecord: 26.6ms | Allocations: 3457)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:04:45 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:04:59 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"31", "donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "charity_id"=>"31"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (5.8ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Clarita M Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "500.00"], ["charity_id", 31], ["created_at", "2020-12-10 03:04:59.510579"], ["updated_at", "2020-12-10 03:04:59.510579"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 95ms (Views: 0.5ms | ActiveRecord: 18.0ms | Allocations: 3755)
+
+
+Started PUT "/donations/148" for ::1 at 2020-12-09 22:05:11 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"148", "donor_name"=>"Clarita", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"700.00", "donation"=>{"id"=>"148", "donor_name"=>"Clarita", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"700.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 148], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (12.2ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Clarita"], ["donor_amount", "700.00"], ["updated_at", "2020-12-10 03:05:11.567196"], ["id", 148]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (32.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 60ms (Views: 0.4ms | ActiveRecord: 45.0ms | Allocations: 4955)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:05:44 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"30", "donor_name"=>"jimmy Dean", "donor_email"=>"vic@comcast.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"jimmy Dean", "donor_email"=>"vic@comcast.net", "donor_amount"=>"1,000.00", "charity_id"=>"30"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (13.2ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "jimmy Dean"], ["donor_email", "vic@comcast.net"], ["donor_amount", "1,000.00"], ["charity_id", 30], ["created_at", "2020-12-10 03:05:44.583365"], ["updated_at", "2020-12-10 03:05:44.583365"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (34.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 70ms (Views: 0.4ms | ActiveRecord: 48.2ms | Allocations: 4847)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:05:56 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.6ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:06:07 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"jimmy Dean", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"jimmy Dean", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (31.6ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "jimmy Dean"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:06:07.619154"], ["updated_at", "2020-12-10 03:06:07.619154"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 134ms (Views: 0.4ms | ActiveRecord: 42.0ms | Allocations: 7855)
+
+
+Started PUT "/donations/150" for ::1 at 2020-12-09 22:06:17 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"150", "donor_name"=>"jimmy", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500000.00", "donation"=>{"id"=>"150", "donor_name"=>"jimmy", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500000.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 150], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (13.9ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "jimmy"], ["donor_amount", "500000.00"], ["updated_at", "2020-12-10 03:06:17.948307"], ["id", 150]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (38.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 52.8ms | Allocations: 5837)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:06:23 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:06:36 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"32", "donor_name"=>"Victor Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Victor Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500.00", "charity_id"=>"32"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (9.3ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Victor Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "500.00"], ["charity_id", 32], ["created_at", "2020-12-10 03:06:36.053859"], ["updated_at", "2020-12-10 03:06:36.053859"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (20.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 54ms (Views: 1.0ms | ActiveRecord: 30.2ms | Allocations: 3755)
+
+
+Started PUT "/donations/151" for ::1 at 2020-12-09 22:06:46 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"151", "donor_name"=>"Victor", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"090", "donation"=>{"id"=>"151", "donor_name"=>"Victor", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"090"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (11.1ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Victor"], ["donor_amount", "090"], ["updated_at", "2020-12-10 03:06:46.887644"], ["id", 151]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (29.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 72ms (Views: 0.5ms | ActiveRecord: 40.7ms | Allocations: 9485)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:11:29 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 1.3ms | Allocations: 2077)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:12:23 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:15:39 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"32", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "charity_id"=>"32"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (23.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "500.00"], ["charity_id", 32], ["created_at", "2020-12-10 03:15:40.026003"], ["updated_at", "2020-12-10 03:15:40.026003"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 139ms (Views: 0.5ms | ActiveRecord: 31.1ms | Allocations: 8932)
+
+
+Started PUT "/donations/152" for ::1 at 2020-12-09 22:16:09 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"152", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00", "donation"=>{"id"=>"152", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"500.00"}}
+  [1m[36mDonation Load (0.3ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 152], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (17.6ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 03:16:09.190130"], ["id", 152]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (25.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 96ms (Views: 2.7ms | ActiveRecord: 43.3ms | Allocations: 9525)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:17:06 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (17.9ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Brooklyn Nets"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:17:06.514411"], ["updated_at", "2020-12-10 03:17:06.514411"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (39.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 283ms (Views: 0.5ms | ActiveRecord: 57.3ms | Allocations: 9659)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:17:09 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:17:17 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"26"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (4.0ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:17:17.328761"], ["updated_at", "2020-12-10 03:17:17.328761"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (47.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 66ms (Views: 0.4ms | ActiveRecord: 51.3ms | Allocations: 4242)
+
+
+Started PUT "/donations/154" for ::1 at 2020-12-09 22:17:34 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"154", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"2,000.00", "donation"=>{"id"=>"154", "donor_name"=>"Patrick", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"2,000.00"}}
+  [1m[36mDonation Load (0.3ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 154], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (47.7ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["donor_amount", "2,000.00"], ["updated_at", "2020-12-10 03:17:34.946709"], ["id", 154]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 80ms (Views: 0.5ms | ActiveRecord: 54.2ms | Allocations: 5890)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:17:53 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (20.8ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "1,000.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:17:53.522736"], ["updated_at", "2020-12-10 03:17:53.522736"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (37.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 76ms (Views: 0.4ms | ActiveRecord: 58.6ms | Allocations: 5427)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:18:11 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"28", "donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500", "donation"=>{"donor_name"=>"Clarita M Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"500", "charity_id"=>"28"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (4.8ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Clarita M Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "500"], ["charity_id", 28], ["created_at", "2020-12-10 03:18:11.413777"], ["updated_at", "2020-12-10 03:18:11.413777"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (35.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 84ms (Views: 1.1ms | ActiveRecord: 40.0ms | Allocations: 5331)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:18:28 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Clarita M Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Clarita M Harrison", "donor_email"=>"Hurlerco@hotmail.com", "donor_amount"=>"1,000.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (13.1ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Clarita M Harrison"], ["donor_email", "Hurlerco@hotmail.com"], ["donor_amount", "1,000.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:18:28.923301"], ["updated_at", "2020-12-10 03:18:28.923301"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (42.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 74ms (Views: 0.5ms | ActiveRecord: 55.3ms | Allocations: 4242)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:18:32 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:18:39 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"25", "donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Brooklyn Nets", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"1,000.00", "charity_id"=>"25"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (15.3ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Brooklyn Nets"], ["donor_email", "jahman@bellatlantic.net"], ["donor_amount", "1,000.00"], ["charity_id", 25], ["created_at", "2020-12-10 03:18:39.769020"], ["updated_at", "2020-12-10 03:18:39.769020"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (31.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 74ms (Views: 0.5ms | ActiveRecord: 47.0ms | Allocations: 4431)
+
+
+Started PUT "/donations/158" for ::1 at 2020-12-09 22:18:53 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"158", "donor_name"=>"Brooklyn", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"2,000.00", "donation"=>{"id"=>"158", "donor_name"=>"Brooklyn", "donor_email"=>"jahman@bellatlantic.net", "donor_amount"=>"2,000.00"}}
+  [1m[36mDonation Load (0.5ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (20.9ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "donor_amount" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Brooklyn"], ["donor_amount", "2,000.00"], ["updated_at", "2020-12-10 03:18:53.677055"], ["id", 158]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (21.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 80ms (Views: 0.3ms | ActiveRecord: 43.2ms | Allocations: 9537)
+
+
+Started GET "/charities" for ::1 at 2020-12-09 22:19:01 -0500
+Processing by CharitiesController#index as */*
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT "charities".* FROM "charities"[0m
+  ↳ app/controllers/charities_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 2077)
+
+
+Started POST "/donations" for ::1 at 2020-12-09 22:19:10 -0500
+Processing by DonationsController#create as */*
+  Parameters: {"charity_id"=>"26", "donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00", "donation"=>{"donor_name"=>"Patrick Harrison", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00", "charity_id"=>"26"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[36mDonation Create (27.5ms)[0m  [1m[32mINSERT INTO "donations" ("donor_name", "donor_email", "donor_amount", "charity_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["donor_name", "Patrick Harrison"], ["donor_email", "kijahnee@comcast.net"], ["donor_amount", "1,000.00"], ["charity_id", 26], ["created_at", "2020-12-10 03:19:10.457868"], ["updated_at", "2020-12-10 03:19:10.457868"]]
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+  [1m[35m (34.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:9:in `create'
+Completed 200 OK in 78ms (Views: 0.5ms | ActiveRecord: 62.4ms | Allocations: 4243)
+
+
+Started PUT "/donations/159" for ::1 at 2020-12-09 22:19:26 -0500
+Processing by DonationsController#update as */*
+  Parameters: {"id"=>"159", "donor_name"=>"Patrick", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00", "donation"=>{"id"=>"159", "donor_name"=>"Patrick", "donor_email"=>"kijahnee@comcast.net", "donor_amount"=>"1,000.00"}}
+  [1m[36mDonation Load (0.4ms)[0m  [1m[34mSELECT "donations".* FROM "donations" WHERE "donations"."id" = ? LIMIT ?[0m  [["id", 159], ["LIMIT", 1]]
+  ↳ app/controllers/donations_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[36mDonation Update (18.5ms)[0m  [1m[33mUPDATE "donations" SET "donor_name" = ?, "updated_at" = ? WHERE "donations"."id" = ?[0m  [["donor_name", "Patrick"], ["updated_at", "2020-12-10 03:19:26.244997"], ["id", 159]]
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+  [1m[35m (38.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/donations_controller.rb:22:in `update'
+Completed 200 OK in 82ms (Views: 0.4ms | ActiveRecord: 57.1ms | Allocations: 4834)
+
+

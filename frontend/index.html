@@ -11,43 +11,38 @@
 <body>
   <nav class="navbar navbar-dark bg-primary mb-3">
     <a class="navbar-brand" href="#">THE CHARITY LIST</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarColor03">
-      <ul class="navbar-nav mr-auto">
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div> 
+    </button> -->
+  </nav>
+ 
   <div id="Charity-header" >
     <img 
       src="https://cdn.shopify.com/s/files/1/0104/7098/1690/products/goat_51dfa9fc-ba2b-4154-9ffa-088ad053c4f3_736x736.jpg?v=1603266051"
       alt="Charity-header"
+
+      class="headerPic"
     />
 </div>
   <div class="container searchContainer">
     <div class="search card card-body">
       <h1>Donate to one of these fine Charities</h1>
-      <p class="lead">choose a charity by its Id to donate</p>
+      <p class="lead">Choose a charity and donate.</p>
       
       <form id="create-donation" method="post" style="display: none">
         <input type="text" id="charity-id" class="form-control" placeholder="Charity ID">
         <input type="text" id="name" placeholder="Donor Name">
         <input type="text" id="email" placeholder="Donor email">
         <input type="text" id="amount" placeholder="Donation Amount">
-        <input type="submit" value=" Add Donor ">
+        <input type="submit" value=" Add Donation ">
       </form>     
         <div id="results">
         </div>
     </div>
       <br>
-      <div>
-        <ul class= "placecard">
-        </ul>
+      
+      <div class= "placecard">
+    
       </div>
   </div>
     <form action="" id="update-donation" method="post">
@@ -83,7 +78,7 @@
 <br>
   </div>   
  
-  
+
   <div class="popup-wrapper">
     <div class="popup">
       <div class="popup-close">x</div>

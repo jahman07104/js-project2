@@ -11,7 +11,6 @@ const searchCharity = document.getElementById('searchCharity');
 // });
 //  variables for Donor popup
 
-
 const button = document.querySelector('.button');
 const popup = document.querySelector('.popup-wrapper');
 const close = document.querySelector('.popup-close'); 
@@ -20,14 +19,23 @@ const updateForm = document.getElementById('update-donation')
 
 
 // Donor pop up maybe for third fetch to update.??
-
 close.addEventListener('click', () => {
-  popup.style.display = 'none';
+ 
+
+
+ popup.style.display = 'none';
+console.log('here ------------------------- !!!!!')
+ 
+  
 
 });
 
 popup.addEventListener('click', () => {
-  popup.style.display = 'none';
+
+  updateForm.className = 'newpopS'
+  console.log('here  yooo---------------------- !!!!!')
+ popup.style.display = 'none';
+ 
 });
 
 // Donor create form
@@ -40,6 +48,7 @@ createForm.addEventListener('submit', function(e) {
   const email = document.getElementById('email').value
   const amount = document.getElementById('amount').value
   let donation = new Donation({ charity_id: charityId, donor_name: name, donor_email: email, donor_amount: amount })
+  updateForm.className = 'newpops'
   //adapter = new DonationsAdapter()
   DonationsAdapter.addDonation(donation)
 })
