@@ -19,7 +19,7 @@
               console.log(donation)
               const results = document.getElementById('results')
                 let form = document.getElementById('update-donation')
-              form.innerHTML += `
+              form.innerHTML = `
               <form action="/action_page.php" method="post">
               <div class="form-group">
                 <input type="hidden" class="form-control" name='id' id="id" value=${donation.id}>
@@ -52,6 +52,7 @@
 
               ` 
               createForm.style.display = 'none'
+              updateForm.style.display = 'block'
           })
       }
 
