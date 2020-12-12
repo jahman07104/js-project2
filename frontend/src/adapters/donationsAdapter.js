@@ -73,8 +73,16 @@
                 console.log(donation)
                 const results = document.getElementById('results')
   
-                results.innerHTML = `<p> Here is is your Updated Donation! ${donation.donor_name}</p>
-                <p> your donation amount is now ${donation.donor_amount}</p>` 
+                results.innerHTML = `<div id='updateDonationMessage'>
+                <p> Here is is your Updated Donation! ${donation.donor_name}</p>
+                <p> your donation amount is now ${donation.donor_amount}</p>
+                <button id='resetButton'> Reset </button>
+                </div>`
+                
+
+                document.getElementById("resetButton").onclick = function() {
+                  document.getElementById("updateDonationMessage").innerHTML = "";
+                };
 
                 results.style.display = 'block'
                 updateForm.style.display = 'none'

@@ -30,7 +30,8 @@ class Charities {
         <div class="donation-card">
           <h3 class="charity-title">${this.charities[i].name}</h3>
           <img src=${this.charities[i].image} />
-          <button class="charity-button" id="button_${this.charities[i].id}"> Donate to this Charity </button>
+
+          <button class="charity-button" id="button_${this.charities[i].id}_${this.charities[i].name}"> Donate to this Charity </button>
         </div>
         `
       }
@@ -45,7 +46,9 @@ class Charities {
           createForm.style.display = 'block'
           console.log(`id is: ${e.target.id}`)
           let charityId = e.target.id.split('_')[1]
+          let charityName = e.target.id.split('_')[2]
           document.getElementById('charity-id').value = charityId;
+          document.getElementById('charity-name').value = charityName;
           document.getElementById('name').value = '';
           document.getElementById('email').value = '';
           document.getElementById('amount').value = '';

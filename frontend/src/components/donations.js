@@ -44,6 +44,7 @@ createForm.addEventListener('submit', function(e) {
   e.preventDefault()
   console.log('submitting donation form')
   const charityId = document.getElementById('charity-id').value
+  const charityName = document.getElementById('charity-name').value
   const name = document.getElementById('name').value
   const email = document.getElementById('email').value
   const amount = document.getElementById('amount').value
