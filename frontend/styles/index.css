@@ -2,19 +2,20 @@ body {
   background-color: dodgerblue;
 }
 
-/* .nav {
-  color: green;
+header {
+  color: crimson;
+  width: 100%;
+  height: 75px;
+  background: rgb(230, 230, 233);
   text-align: center;
-} */
-
+}
+  
 .placecard{
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 6px;
-
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 6px;
 
 }
 
@@ -22,14 +23,6 @@ body {
 border: solid thin red ;
 background-color: grey;
 }
-
-
-
-
-
-
-
-
 
 #update-donation{
   padding: 10px ;
@@ -42,29 +35,19 @@ background-color: grey;
   
 }
 
-
-
-
-
 .headerPic{
-  height: 28vh;
-  width: 30%;
+  height: 64vh;
+  width: 25%;
   padding: 10px;
   margin-bottom: 5px;
-  border: solid black;
+  border: solid grey;
   border-radius: 2px;
-
-
 }
 
 .donation-card{
-
-  min-width: 60px;
-  margin: 5px;
-
+min-width: 60px;
+margin: 5px;
 }
-
-
 
 .charity-title {
   font-size: 20px;
@@ -78,26 +61,23 @@ background-color: grey;
   flex-direction: column;
   justify-content: space-between;
 }
+
 img {
- 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 80%
- 
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+height: 80%
 }
 
 .charity-header {
   text-align: center;
 }
 
- .container card-body {
+.container card-body {
   display: flex;
   flex-flow: row;
 } 
-
-
 
 .box {
   padding:30 px;
@@ -107,44 +87,11 @@ img {
 
 }
 
-.box-1{
-  background: #581f18;
-}
-.box-2{
-  background: #581f18;
-}
-.box-3{
-  background: #f0a202;
-}
-.box-4{
-  background: #581f18;
-}
-.box-5{
-  background: #d95d39;
-}
-.box-6{
-  background: #581f18;
-}
-.box-7{
-  background: #202c59;
-}
-.box-8{
-  background: #51cb20;
-}
-
-* {
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
-
-
 
 button{
   display: block;
@@ -190,24 +137,3 @@ button{
   right: 18px;
   cursor: pointer;
 }
-
-/* .flex-container {
-  display: flex;
-  background-color: greenyellow;
-}
-
-.flex-container div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-
-} */
-
-/* .container-searchContainer{
-display: flex;
-
-} */

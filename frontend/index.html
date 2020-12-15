@@ -1,106 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Charity finder</title>
-</head>
-<body>
-  <nav class="navbar navbar-dark bg-primary mb-3">
-    <a class="navbar-brand" href="#">THE CHARITY LIST</a>
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-  </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Charity List</title>
+  </head>
  
-  <div id="Charity-header" >
-    <img 
-      src="https://cdn.shopify.com/s/files/1/0104/7098/1690/products/goat_51dfa9fc-ba2b-4154-9ffa-088ad053c4f3_736x736.jpg?v=1603266051"
-      alt="Charity-header"
-
-      class="headerPic"
-    />
-</div>
-  <div class="container searchContainer">
-    <div class="search card card-body">
-      <h1>Donate to one of these fine Charities</h1>
-      <p class="lead">Choose a charity and donate.</p>
-      
-      <form id="create-donation" method="post" style="display: none">
-        <input type="hidden" id="charity-id" class="form-control" placeholder="Charity ID">
-        <input type="text" id="charity-name" class="form-control" placeholder="Charity Name">
-        <input type="text" id="name" placeholder="Donor Name">
-        <input type="text" id="email" placeholder="Donor email">
-        <input type="text" id="amount" placeholder="Donation Amount">
-        <input type="submit" value=" Add Donation ">
-      </form>     
+  <body>
+    <br>
+    <header>
+      <nav>
+        <h1>The Charity List</h1>
+      </nav>
+    </header>
+    <div id="Charity-header" >
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0104/7098/1690/products/goat_51dfa9fc-ba2b-4154-9ffa-088ad053c4f3_736x736.jpg?v=1603266051"
+        alt="Charity-header"
+        class="headerPic"
+      />
+    </div>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Donate to these fine Charities</h1>
+        <p class="lead">Choose a charity and donate.</p>
+        <form id="create-donation" method="post" style="display: none">
+          <input type="hidden" id="charity-id" class="form-control" placeholder="Charity ID">
+          <input type="text" id="charity-name" class="form-control" placeholder="Charity Name">
+          <input type="text" id="name" placeholder="Donor Name">
+          <input type="text" id="email" placeholder="Donor email">
+          <input type="text" id="amount" placeholder="Donation Amount">
+          <input type="submit" value=" Add Donation ">
+        </form>     
         <div id="results">
         </div>
-    </div>
-      <br>
-      
-      <div class= "placecard">
-    
       </div>
-  </div>
-    <form action="" id="update-donation" method="post">
-      <div class="popup-wrapper">
+        <br>
+      <div class= "placecard">
+      </div>
+    </div>
+      <form action="" id="update-donation" method="post">
+        <div class="popup-wrapper">
+          <div class="popup">
+            <div class="popup-content">
+                <h2>
+                  <form action="/action_page.php" method="post">
+                    <div class="form-group">
+                      <label for="name">Donor Name:</label>
+                      <input type="name" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Donor Email :</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Donation amount:</label>
+                      <input type="text" class="form-control" id="amt">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div>
+                  </form>
+                  <p>your updated info</p>    
+                </h2>
+              </div>
+          </div>
+        </div>
+        <br>
+        <br>
+    <div class="popup-wrapper">
         <div class="popup">
           <div class="popup-close">x</div>
             <div class="popup-content">
-              <h2>
-                <form action="/action_page.php" method="post">
-                  <div class="form-group">
-                    <label for="name">Donor Name:</label>
-                    <input type="name" class="form-control" id="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Donor Email :</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="pwd">Donation amount:</label>
-                    <input type="text" class="form-control" id="amt">
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
-                  </div>
-                 
-                </form>
-                <p>your updated info</p>    
-              </h2>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-<br>
-<br>
-  </div>   
- 
+    <footer class="mt-5 p-3 text-center bg-light">
+      Charity List &copy;
+    </footer>
 
-  <div class="popup-wrapper">
-    <div class="popup">
-      <div class="popup-close">x</div>
-      <div class="popup-content">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-      </div>
-    </div>
-  </div>
-  <footer class="mt-5 p-3 text-center bg-light">
-    Charity Finder &copy;
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-<script src="src/components/charities.js"></script>
-<script src="src/components/donation.js"></script>
-<script src="src/components/donations.js"></script>
-<script src="src/components/app.js"></script>
-<script src="src/adapters/CharitiesAdapter.js"></script>
-<script src="src/adapters/DonationsAdapter.js"></script>
-<script src="src/index.js"></script> 
-</body>
+    <script src="src/components/charities.js"></script>
+    <script src="src/components/donation.js"></script>
+    <script src="src/components/donations.js"></script>
+    <script src="src/components/app.js"></script>
+    <script src="src/adapters/CharitiesAdapter.js"></script>
+    <script src="src/adapters/DonationsAdapter.js"></script>
+    <script src="src/index.js"></script> 
+  </body>
 </html>
